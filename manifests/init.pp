@@ -1,4 +1,11 @@
-# This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
+# Install AppZapper
+#
+# Examples
+#
+#   include appzapper
+class appzapper {
+  package { 'AppZapper':
+    source => "http://www.appzapper.com/downloads/appzapper.dmg",
+    provider => 'appdmg'
+  }
 }
